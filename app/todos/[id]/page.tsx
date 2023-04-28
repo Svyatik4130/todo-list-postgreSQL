@@ -1,5 +1,5 @@
 import TodoItem from "@/components/TodoItem";
-import { TodoItem as TodoItemType } from "@/types/todoItem";
+import { TodoItem as TodoItemType } from "@prisma/client";
 
 async function getTodoItem(id: string) {
   const res = await fetch(`${process.env.BASE_URL}/api/todos/${id}`);

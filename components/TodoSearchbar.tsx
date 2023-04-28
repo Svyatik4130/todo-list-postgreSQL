@@ -1,6 +1,6 @@
 "use client";
 
-import { TodoItem } from "@/types/todoItem";
+import { TodoItem } from "@prisma/client";
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
 
 type Props = {

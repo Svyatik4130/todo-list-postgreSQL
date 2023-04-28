@@ -1,6 +1,5 @@
 import { default as getFullList } from "@/pages/api/todos";
 import { default as getSingleTodo } from "@/pages/api/todos/[todoId]";
-import { todoList } from "@/data/todoListData";
 import type { NextApiHandler, NextApiRequest, NextApiResponse } from "next";
 import { createRequest, createResponse, RequestOptions } from "node-mocks-http";
 
