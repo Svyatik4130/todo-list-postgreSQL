@@ -18,6 +18,7 @@ export default async function handler(
           description: todo.description,
         },
       });
+      await res.revalidate('/')
       return res.status(200).json(data);
     } else {
       return res.status(500).json({ message: "Method is not supported" });

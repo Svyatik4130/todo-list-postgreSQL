@@ -18,7 +18,7 @@ export default function RootLayout({
         <div className="w-screen h-screen absolute animate-pulse bg-gradient-to-r from-cyan-500 to-blue-500"></div>
         {/* content */}
         <div className="w-screen h-screen absolute flex items-center justify-center ">
-          <div className="w-96 h-4/6 rounded-xl bg-white p-5">
+          <div className="w-96 h-4/6 overflow-scroll rounded-xl bg-white p-5">
             {children}
           </div>
         </div>

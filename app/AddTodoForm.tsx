@@ -15,10 +15,9 @@ export default function AddTodoForm() {
         title,
         description,
       }),
+      next: { revalidate: 1 },
     });
-    console.log(res);
     if (!res.ok) {
-      console.log(res);
     } else {
       setTitle("");
       setDesc("");
@@ -46,7 +45,7 @@ export default function AddTodoForm() {
       </div>
       <button
         onClick={() => postTodoItem(title, desc)}
-        className="p-1 py-7 absolute top-0 right-0 rounded-md bg-slate-100 text-green-500 text-xl hover:bg-slate hover:animate-pulse transition-all"
+        className="p-1 py-7 absolute top-0 right-0 rounded-md bg-slate-100 text-green-500 text-xl hover:bg-green-500 hover:text-slate-100 transition-all"
       >
         +
       </button>
